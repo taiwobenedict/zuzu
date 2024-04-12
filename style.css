@@ -90,12 +90,17 @@ header {
   border-radius: var(--radius);
   height: 75vh;
   overflow: hidden;
+  position: relative;
 }
 
 .hero-img {
     max-width: 500px;
     margin-inline: auto;
-    transform: translateY(-10px);
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    
 }
 
 /* About */
@@ -154,6 +159,7 @@ header {
     #hero {
         height: 65vh;
     }
+  
  }
 
 @media (max-width: 767.98px) { 
@@ -169,5 +175,10 @@ header {
  @media (max-width: 1199.98px) { 
     .phase {
         font-size: 6rem;
+    }
+
+    .hero-img {
+        position: static;
+        transform: translate(0);
     }
   }

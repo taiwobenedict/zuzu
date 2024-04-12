@@ -149,6 +149,13 @@ header {
 
 }
 
+
+@media (max-width: 575.98px) { 
+    #hero {
+        height: 65vh;
+    }
+ }
+
 @media (max-width: 767.98px) { 
     .phase {
         font-size: 4rem !important;

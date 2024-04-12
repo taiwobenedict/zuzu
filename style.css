@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  --pri-color: #bcd82b;
+  --sec-color: #e1e1e1;
+  --radius: 18px;
+}
+
+body {
+  font-family: "Genos", sans-serif;
+  padding: 15px;
+  color: #262626;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+
+.radius {
+    border-radius: var(--radius);
+}
+
+.pri-bg {
+    background-color: var(--pri-color);
+    border-radius: var(--radius);
+}
+
+.sec-bg {
+    background-color: var(--sec-color);
+    border-radius: var(--radius);
+}
+
+
+.text-border {
+  color: var(--pri-color);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #2d2214;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: .5;
+
+}
+
+.text-gradient-1 {
+  background: -webkit-linear-gradient(90deg, #e1e1e1 10%, #562487 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-2 {
+  background: -webkit-linear-gradient(90deg, #bcd82b 10%, #562487 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Header */
+header {
+  background: #f8f3f8;
+  border-radius: var(--radius);
+}
+
+.nav-link {
+    color: #262626 !important;
+}
+
+.navbar-brand {
+    width: 82px;
+    height: 38px;
+    background-color: #DFFF15;
+    border-radius: 12px;
+}
+
+.cta-btn {
+    background-color: #DFFF15;
+    border-radius: 12px;
+}
+
+/* Hero */
+#hero {
+  background: #bbd728;
+  padding: 15px;
+  border-radius: var(--radius);
+  height: 85vh;
+  overflow: hidden;
+}
+
+.hero-img {
+    max-width: 500px;
+    margin-inline: auto;
+    transform: translateY(-10px);
+}
+
+/* About */
+.learn-more {
+    border: 1px solid #262626;
+    border-radius: 25px;
+    margin-inline: auto;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: -15;
+    color: #e1e1e1;
+    background-color: #262626;
+    border-radius: 50%;
+    padding: 5px;
+    transform: rotate(-30deg);
+}
+
+/* Roadmap */
+.phase {
+    font-size: 8rem;
+    line-height: .7;
+    transform: translateY(-10px);
+}
+
+/* Tokenomics */
+.token1,
+.token2,
+.token3 {
+    height: 150px;
+}
+
+.token1, .circle-1 {
+    background-color: #E5EF6F;
+}
+
+.token2, .circle-2 {
+    background-color: #DFFF15;
+}
+
+.token3, .circle-3 {
+    background-color: #BCD82B;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+}
+
+@media (max-width: 767.98px) { 
+    .phase {
+        font-size: 4rem !important;
+    }
+
+    .text-border {
+        font-size: 7rem;
+    }
+ }
+
+ @media (max-width: 1199.98px) { 
+    .phase {
+        font-size: 6rem;
+    }
+  }

@@ -42,9 +42,9 @@ h1 {
 
 .text-border {
   color: var(--pri-color);
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #2d2214;
-  font-size: 8rem;
+  font-size: 180px;
   font-weight: 700;
   line-height: .5;
 
@@ -88,13 +88,13 @@ header {
   background: #bbd728;
   padding: 15px;
   border-radius: var(--radius);
-  height: 85vh;
+  height: 980px;
   overflow: hidden;
   position: relative;
 }
 
 .hero-img {
-    max-width: 600px;
+    max-width: 899px;
     margin-inline: auto;
     position: absolute;
     bottom:0;
@@ -173,6 +173,8 @@ header {
  }
 
  @media (max-width: 1199.98px) { 
+
+
     .phase {
         font-size: 6rem;
     }
@@ -182,9 +184,15 @@ header {
         transform: translate(0);
     }
   }
-@media (max-width: 1707px) {
+@media (max-width: 1720px) {
     .hero-img {
         position: static;
         transform: translate(0);
+    }
+}
+
+@media (min-width:1708px) {
+    .hero-img {
+        top: 30;
     }
 }

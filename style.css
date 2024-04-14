@@ -41,13 +41,11 @@ h1 {
 
 
 .text-border {
-  color: var(--pri-color);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #2d2214;
   font-size: 180px;
   font-weight: 700;
   line-height: .5;
-
 }
 
 .text-gradient-1 {
@@ -72,10 +70,9 @@ header {
 }
 
 .navbar-brand {
-    width: 82px;
-    height: 38px;
-    background-color: #DFFF15;
-    border-radius: 12px;
+    font-size: 2.2rem;
+    line-height: 0px;
+    font-weight: 700;
 }
 
 .cta-btn {
@@ -85,12 +82,13 @@ header {
 
 /* Hero */
 #hero {
-  background: #bbd728;
+  background:  url("images/background.png") center center/cover no-repeat #bbd728;
   padding: 15px;
   border-radius: var(--radius);
   height: 980px;
   overflow: hidden;
   position: relative;
+  
 }
 
 .hero-img {
@@ -169,6 +167,21 @@ header {
 
     .text-border {
         font-size: 7rem;
+    }
+ }
+@media (min-width: 767.98px) { 
+
+    .text-border {
+        font-size: 5.7vw !important;
+        line-height: 1;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        color: transparent;
+    }
+
+    #hero {
+        height: 820px;
     }
  }
 

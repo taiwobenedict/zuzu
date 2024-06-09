@@ -165,6 +165,11 @@ header {
   .text-bord {
     font-size: 3.5rem;
   }
+
+  .address h5 {
+    font-size: 1rem;
+  }
+
 }
 
 @media (max-width: 767.98px) {
